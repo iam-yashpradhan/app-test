@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "appTesting",
-    "slug": "appTesting",
+    "slug": "app-test",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +15,29 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.yashpradhan.app-test",
+      "runtimeVersion": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
+      },
+      "runtimeVersion": {
+        "policy": "appVersion"
       }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "7560d651-db28-4f0e-84b6-2bd94cbb98e2"
+      }
+    },
+    "updates": {
+      "url": "https://u.expo.dev/7560d651-db28-4f0e-84b6-2bd94cbb98e2"
     }
   }
 }
